@@ -1,0 +1,47 @@
+.golden {
+  padding: 6rem 0 0;
+}
+
+.golden h2 {
+  font-size: clamp(3.4rem, 10vw, 8rem);
+  margin: 0.4rem 0 1.2rem;
+}
+
+.golden__text {
+  max-width: 46ch;
+  color: var(--text-2);
+  margin-bottom: 2.5rem;
+}
+
+.golden__shot {
+  position: relative;
+  min-height: 70svh;
+  overflow: hidden;
+}
+
+.golden__shot img {
+  width: 100%;
+  height: 70svh;
+  object-fit: cover;
+}
+
+.golden__shot figcaption {
+  position: absolute;
+  inset: auto 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 1.5rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--tech);
+}
+
+@media (max-width: 767px) {
+  .golden__shot figcaption {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -1,0 +1,71 @@
+.collection {
+  padding: 7rem 0;
+}
+
+.collection h2 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  margin: 0.4rem 0 1.8rem;
+}
+
+.collection__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.collection__filters button {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--text-2);
+}
+
+.collection__filters button.is-active {
+  color: var(--red);
+}
+
+.collection__grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+.collection__grid .car-card--xl { grid-column: span 8; }
+.collection__grid .car-card--wide { grid-column: span 8; }
+.collection__grid .car-card--tall { grid-column: span 4; }
+.collection__grid .car-card--m { grid-column: span 4; }
+.collection__grid .car-card--s { grid-column: span 4; }
+
+.collection__empty {
+  color: var(--text-2);
+}
+
+@media (max-width: 1199px) {
+  .collection__grid .car-card--xl,
+  .collection__grid .car-card--wide { grid-column: span 12; }
+  .collection__grid .car-card--tall,
+  .collection__grid .car-card--m,
+  .collection__grid .car-card--s { grid-column: span 6; }
+}
+
+@media (max-width: 991px) {
+  .collection {
+    padding: 4.5rem 0;
+  }
+
+  .collection h2 {
+    font-size: clamp(2.4rem, 12vw, 4rem);
+  }
+
+  .collection__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .collection__grid .car-card--xl,
+  .collection__grid .car-card--wide,
+  .collection__grid .car-card--tall,
+  .collection__grid .car-card--m,
+  .collection__grid .car-card--s {
+    grid-column: auto;
+  }
+}

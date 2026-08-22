@@ -1,0 +1,30 @@
+.barcode {
+  width: 120px;
+  opacity: 0.55;
+}
+
+.crosshair {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}
+
+.crosshair i {
+  position: absolute;
+  background: var(--red);
+}
+
+.crosshair i:first-child {
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.crosshair i:last-child {
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+}

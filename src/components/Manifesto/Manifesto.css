@@ -1,0 +1,29 @@
+.manifesto {
+  min-height: 100svh;
+  display: grid;
+  align-items: center;
+  background: #050505;
+  padding: 6rem 0;
+}
+
+.manifesto h2 {
+  font-size: clamp(2.4rem, 6vw, 5.2rem);
+  max-width: 16ch;
+  margin: 1.4rem 0 3.5rem;
+}
+
+.manifesto__line {
+  height: 1px;
+  background: var(--red);
+  margin-bottom: 1.4rem;
+}
+
+.manifesto__years {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--text-2);
+  font-family: var(--font-display);
+  letter-spacing: 0.12em;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+}

@@ -1,0 +1,86 @@
+.atmosphere {
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+  display: grid;
+  align-items: end;
+}
+
+.atmosphere picture,
+.atmosphere img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.atmosphere__shade {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 80% 20%, rgba(215, 25, 32, 0.18), transparent 30%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.78));
+}
+
+.atmosphere__content {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 5rem;
+}
+
+.atmosphere h2 {
+  font-size: clamp(3.4rem, 9vw, 8rem);
+  margin: 0.6rem 0 1rem;
+}
+
+.atmosphere__lead,
+.atmosphere__note {
+  max-width: 42ch;
+  color: var(--text-2);
+}
+
+.telemetry,
+.wangan-ui {
+  display: flex;
+  gap: 1.5rem;
+  color: var(--tech);
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  margin: 1rem 0;
+}
+
+.speedo {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--text);
+}
+
+.atmosphere__jp {
+  position: absolute;
+  right: 2rem;
+  top: 20%;
+  writing-mode: vertical-rl;
+  font-family: var(--font-jp);
+  letter-spacing: 0.45em;
+  z-index: 2;
+  color: var(--text-2);
+}
+
+.atmosphere__lines {
+  width: min(420px, 80%);
+  overflow: visible;
+}
+
+@media (max-width: 767px) {
+  .telemetry,
+  .wangan-ui {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .atmosphere__jp {
+    display: none;
+  }
+}

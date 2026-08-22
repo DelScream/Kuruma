@@ -1,0 +1,25 @@
+:root {
+  --bg: #080808;
+  --bg-2: #111111;
+  --card: #151515;
+  --red: #d71920;
+  --red-dark: #b5121b;
+  --red-bright: #ff2a2a;
+  --text: #f2f0ea;
+  --text-2: #8b8b8b;
+  --metal: #555555;
+  --tech: #a9c7d8;
+  --font-body: "Manrope", sans-serif;
+  --font-display: "Oswald", sans-serif;
+  --font-jp: "Noto Sans JP", sans-serif;
+  --header-h: 84px;
+  --space: clamp(1.25rem, 3vw, 3rem);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --max: 1440px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --header-h: 64px;
+  }
+}

@@ -1,0 +1,36 @@
+.events {
+  padding: 7rem 0;
+  background: #050505;
+}
+
+.events h2 {
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  margin: 0.4rem 0 2rem;
+}
+
+.events__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.events article {
+  background: var(--card);
+  padding: 1.4rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.events h3 {
+  font-size: 1.8rem;
+}
+
+.events article p:last-child {
+  color: var(--text-2);
+}
+
+@media (max-width: 991px) {
+  .events__list {
+    grid-template-columns: 1fr;
+  }
+}

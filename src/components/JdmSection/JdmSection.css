@@ -1,0 +1,54 @@
+.jdm {
+  position: relative;
+  overflow: hidden;
+  padding: 8rem 0 10rem;
+  background: var(--bg);
+}
+
+.jdm__grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.jdm h2 {
+  font-size: clamp(3rem, 7vw, 6rem);
+}
+
+.jdm__text {
+  color: var(--text-2);
+  max-width: 46ch;
+  font-size: 1.05rem;
+}
+
+.jdm__huge {
+  position: absolute;
+  left: 50%;
+  bottom: -8%;
+  transform: translateX(-50%);
+  font-family: var(--font-display);
+  font-size: clamp(8rem, 28vw, 22rem);
+  letter-spacing: 0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(242, 240, 234, 0.08);
+  pointer-events: none;
+}
+
+.jdm__huge::after {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  top: 52%;
+  height: 2px;
+  background: var(--red);
+}
+
+@media (max-width: 767px) {
+  .jdm__grid {
+    grid-template-columns: 1fr;
+  }
+}

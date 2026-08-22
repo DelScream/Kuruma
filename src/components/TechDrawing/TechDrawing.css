@@ -1,0 +1,32 @@
+.drawing {
+  background: #0c0c0c;
+  border: 1px solid rgba(242, 240, 234, 0.08);
+  padding: 1.4rem;
+}
+
+.drawing figcaption {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.drawing span {
+  display: block;
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+
+.drawing strong {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--tech);
+}
+
+@media (max-width: 767px) {
+  .drawing figcaption {
+    grid-template-columns: 1fr;
+  }
+}

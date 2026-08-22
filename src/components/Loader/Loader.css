@@ -1,0 +1,28 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: 120;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 1rem;
+  background: #000;
+}
+
+.loader__brand {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  letter-spacing: 0.18em;
+}
+
+.loader__bar {
+  width: min(280px, 70vw);
+  height: 4px;
+  background: #222;
+}
+
+.loader__bar span {
+  display: block;
+  height: 100%;
+  background: var(--red);
+}

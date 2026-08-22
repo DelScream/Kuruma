@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://delscream.github.io/Kuruma/sitemap.xml

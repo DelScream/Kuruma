@@ -1,0 +1,34 @@
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 90;
+  height: 1px;
+  pointer-events: none;
+}
+
+.scroll-progress span {
+  display: block;
+  height: 100%;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.hero__scroll i {
+  background: rgba(242, 240, 234, 0.2);
+  position: relative;
+}
+
+.hero__scroll i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--red);
+  transform: scaleY(var(--fill, 0));
+  transform-origin: top center;
+}

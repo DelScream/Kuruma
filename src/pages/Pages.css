@@ -1,0 +1,139 @@
+.page {
+  padding: 8rem 0 5rem;
+}
+
+.page h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+  margin: 0.5rem 0 1.2rem;
+}
+
+.page__lead {
+  max-width: 52ch;
+  color: var(--text-2);
+  margin-bottom: 2.5rem;
+}
+
+.page-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.page-list article {
+  background: var(--card);
+  padding: 1.4rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.page-list h2 {
+  font-size: 2rem;
+}
+
+.car-page__hero {
+  position: relative;
+  min-height: 78svh;
+}
+
+.car-page__hero img {
+  width: 100%;
+  height: 78svh;
+  object-fit: cover;
+}
+
+.car-page__hero-copy {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 3rem 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.86));
+}
+
+.car-page__hero-copy h1 {
+  font-size: clamp(3rem, 8vw, 7rem);
+}
+
+.car-page__body {
+  padding: 4rem 0 6rem;
+  display: grid;
+  gap: 3rem;
+}
+
+.car-page__specs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.car-page__specs div {
+  background: var(--card);
+  padding: 1rem;
+}
+
+.car-page__specs dt {
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+
+.car-page__specs dd {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--tech);
+}
+
+.car-page__history {
+  max-width: 62ch;
+  color: var(--text-2);
+  font-size: 1.05rem;
+}
+
+.car-page__gallery {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 0.8rem;
+}
+
+.car-page__gallery img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.not-found {
+  min-height: 100svh;
+  display: grid;
+  align-items: end;
+  position: relative;
+}
+
+.not-found img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.not-found__shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.86));
+}
+
+.not-found__copy {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 5rem;
+}
+
+.not-found h1 {
+  font-size: clamp(6rem, 20vw, 14rem);
+  color: var(--red);
+}
+
+@media (max-width: 767px) {
+  .car-page__specs,
+  .car-page__gallery {
+    grid-template-columns: 1fr;
+  }
+}

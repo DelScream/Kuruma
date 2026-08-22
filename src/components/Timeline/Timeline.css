@@ -1,0 +1,104 @@
+.timeline {
+  background: #060606;
+  padding: 5rem 0 3rem;
+  overflow: hidden;
+}
+
+.timeline__head h2 {
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  margin: 0.4rem 0 2rem;
+}
+
+.timeline__viewport {
+  overflow: hidden;
+}
+
+.timeline__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.timeline__slide {
+  flex: 0 0 min(720px, 86vw);
+  padding: 0 1.4rem 1rem 0;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.timeline__year {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 5.4rem);
+  color: var(--red);
+  line-height: 0.8;
+}
+
+.timeline__slide h3 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.timeline__slide h3 span {
+  display: block;
+  color: var(--text-2);
+  font-size: 0.55em;
+}
+
+.timeline__shot {
+  overflow: hidden;
+  background: var(--card);
+}
+
+.timeline__shot img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.timeline__slide dl {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.timeline__slide dt {
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+
+.timeline__slide dd {
+  color: var(--tech);
+}
+
+.timeline__slide p {
+  max-width: 42ch;
+  color: var(--text-2);
+}
+
+.timeline__slide a,
+.timeline__slide button {
+  color: var(--red);
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  width: max-content;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .timeline__slide {
+    flex-basis: min(720px, 88vw);
+  }
+
+  .timeline__shot img {
+    height: 200px;
+  }
+
+  .timeline__slide dl {
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .timeline__slide h3 {
+    overflow-wrap: anywhere;
+  }
+}

@@ -1,0 +1,39 @@
+.visit {
+  padding-top: 7rem;
+}
+
+.visit__head h2 {
+  font-size: clamp(2.8rem, 7vw, 6rem);
+  margin: 0.5rem 0 1rem;
+}
+
+.visit__head p:last-child {
+  max-width: 42ch;
+  color: var(--text-2);
+  margin-bottom: 2rem;
+}
+
+.visit figure img {
+  width: 100%;
+  height: min(72vh, 720px);
+  object-fit: cover;
+}
+
+.visit__info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 0 4rem;
+}
+
+.visit__info p:not(.micro) {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 767px) {
+  .visit__info {
+    grid-template-columns: 1fr;
+  }
+}
