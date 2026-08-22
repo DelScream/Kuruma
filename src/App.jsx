@@ -6,6 +6,7 @@ import { useSound } from "./hooks/useSound.js"
 import Header from "./components/Header/Header.jsx"
 import Footer from "./components/Footer/Footer.jsx"
 import Loader from "./components/Loader/Loader.jsx"
+import CreditPopup from "./components/CreditPopup/CreditPopup.jsx"
 import ScrollProgress from "./components/ScrollProgress/ScrollProgress.jsx"
 import Home from "./pages/Home/Home.jsx"
 
@@ -23,6 +24,7 @@ export default function App() {
           К содержанию
         </a>
         {!ready && <Loader onDone={finish} />}
+        {ready && <CreditPopup />}
         <ScrollProgress />
         <Header soundOn={on} onSound={toggle} />
         <main id="main">

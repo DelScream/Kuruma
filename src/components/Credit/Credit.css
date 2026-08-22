@@ -1,0 +1,66 @@
+.credit {
+  display: grid;
+  justify-items: start;
+  gap: 0.55rem;
+}
+
+.credit__label {
+  color: var(--red);
+}
+
+.credit__title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  line-height: 0.95;
+  margin-bottom: 0.35rem;
+}
+
+.credit__name {
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.credit__handle {
+  font-family: var(--font-display);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-2);
+  font-size: 0.82rem;
+}
+
+.credit__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.55rem;
+}
+
+.credit__links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 1rem;
+  border: 1px solid rgba(242, 240, 234, 0.22);
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: border-color 0.3s var(--ease), background 0.3s var(--ease), color 0.3s var(--ease);
+}
+
+.credit__links a:hover {
+  border-color: var(--red);
+  background: var(--red);
+  color: var(--text);
+}
+
+.credit__close {
+  margin-top: 1rem;
+  width: 100%;
+  justify-content: center;
+}

@@ -1,0 +1,32 @@
+.credit-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 140;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+}
+
+.credit-popup__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(10px);
+}
+
+.credit-popup__card {
+  position: relative;
+  width: min(460px, 100%);
+  padding: 2.2rem 1.8rem 1.8rem;
+  background: #0c0c0c;
+  border: 1px solid rgba(242, 240, 234, 0.1);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.55);
+}
+
+.credit-popup__card .credit {
+  width: 100%;
+}
+
+.credit-popup__card .credit__title {
+  font-size: clamp(2rem, 6vw, 2.8rem);
+}

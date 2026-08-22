@@ -1,5 +1,6 @@
 import { useLocale } from "../../context/LocaleContext.jsx"
 import { scrollToId } from "../../hooks/useLenis.js"
+import Credit from "../Credit/Credit.jsx"
 import "./Footer.css"
 
 const links = [
@@ -43,6 +44,9 @@ export default function Footer() {
           <li><a href="https://t.me" rel="noreferrer">Telegram</a></li>
           <li><a href="https://youtube.com" rel="noreferrer">YouTube</a></li>
         </ul>
+      </div>
+      <div className="container site-footer__credit">
+        <Credit heading="p" />
       </div>
       <div className="container site-footer__bottom">
         <p>© 2026 KURUMA / 黒鉄</p>

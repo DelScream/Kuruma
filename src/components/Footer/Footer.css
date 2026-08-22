@@ -28,6 +28,16 @@
   color: var(--text);
 }
 
+.site-footer__credit {
+  padding: 2rem 0 2.2rem;
+  border-top: 1px solid rgba(242, 240, 234, 0.08);
+}
+
+.site-footer__credit .credit__links a {
+  color: var(--text);
+  font-family: var(--font-display);
+}
+
 .site-footer__bottom {
   display: flex;
   justify-content: space-between;
