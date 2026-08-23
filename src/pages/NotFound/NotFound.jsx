@@ -9,7 +9,7 @@ export default function NotFound() {
 
   return (
     <section className="not-found">
-      <Media photo={{ kind: "unsplash", id: PHOTOS.tokyoStreet }} alt="Ночная дорога" sizes="100vw" eager />
+      <Media photo={PHOTOS.tokyoStreet} alt="Ночная дорога" sizes="100vw" eager />
       <div className="not-found__shade" />
       <div className="container not-found__copy">
         <p className="micro">SYSTEM ERROR</p>

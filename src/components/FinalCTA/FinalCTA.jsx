@@ -9,7 +9,7 @@ export default function FinalCTA() {
 
   return (
     <section className="final">
-      <Media photo={{ kind: "unsplash", id: PHOTOS.gtrFront }} alt="Красный свет фар на мокром асфальте" sizes="100vw" />
+      <Media photo={PHOTOS.gtrFront} alt="Красный свет фар на мокром асфальте" sizes="100vw" />
       <div className="final__shade" />
       <div className="container final__copy">
         <h2>

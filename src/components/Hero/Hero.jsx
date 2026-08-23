@@ -57,7 +57,7 @@ export default function Hero() {
     <section className="hero" ref={root}>
       <div className="hero__media">
         <Media
-          photo={{ kind: "unsplash", id: PHOTOS.hero }}
+          photo={PHOTOS.hero}
           alt="Ночной японский автомобиль на мокром асфальте"
           eager
           sizes="100vw"

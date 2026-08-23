@@ -14,7 +14,7 @@ export default function VisitSection() {
         <p>{t.museum}</p>
       </div>
       <figure>
-        <Media photo={{ kind: "unsplash", id: PHOTOS.garage }} alt="Гаражный зал музея автомобильной культуры" sizes="100vw" />
+        <Media photo={PHOTOS.garage} alt="Гаражный зал музея автомобильной культуры" sizes="100vw" />
       </figure>
       <div className="container visit__info">
         <div>

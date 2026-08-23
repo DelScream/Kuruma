@@ -16,7 +16,7 @@ export default function Visit() {
     <article className="visit-page">
       <Seo json={museumJson} />
       <section className="visit-page__hero">
-        <Media photo={{ kind: "unsplash", id: PHOTOS.garage }} alt="Гаражный зал музея KURUMA" eager sizes="100vw" />
+        <Media photo={PHOTOS.garage} alt="Гаражный зал музея KURUMA" eager sizes="100vw" />
         <div className="visit-page__shade" />
         <div className="container visit-page__hero-copy">
           <p className="micro">VISIT / CONTACT</p>

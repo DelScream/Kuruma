@@ -5,7 +5,7 @@ import "./Eras.css"
 
 const eras = [
   { id: "80s", year: "1980", title: "The origin", photo: local("cars/ae86.jpg"), stamp: "起源", tags: "AE86 · FIRST BLOOD" },
-  { id: "90s", year: "1990", title: "The golden era", photo: { kind: "unsplash", id: PHOTOS.tokyoNeon }, stamp: "黄金", tags: "1990—1999 · TURBO · DRIFT · JDM" },
+  { id: "90s", year: "1990", title: "The golden era", photo: PHOTOS.tokyoNeon, stamp: "黄金", tags: "1990—1999 · TURBO · DRIFT · JDM" },
   { id: "00s", year: "2000", title: "The global icon", photo: local("cars/r34.jpg"), stamp: "象徴", tags: "R34 · NSX-R · WORLD" },
 ]
 

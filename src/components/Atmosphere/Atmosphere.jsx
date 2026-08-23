@@ -6,7 +6,7 @@ import "./Atmosphere.css"
 export function DriftSection() {
   return (
     <section className="atmosphere atmosphere--drift" id="drift">
-      <Media photo={{ kind: "unsplash", id: PHOTOS.gtrFront }} alt="Ночной спортивный автомобиль, декоративный кадр" sizes="100vw" />
+      <Media photo={PHOTOS.gtrFront} alt="Ночной спортивный автомобиль, декоративный кадр" sizes="100vw" />
       <div className="atmosphere__shade" />
       <div className="container atmosphere__content">
         <p className="micro">展示 / DRIFT</p>
@@ -31,7 +31,7 @@ export function DriftSection() {
 export function TougeSection() {
   return (
     <section className="atmosphere atmosphere--touge" id="touge">
-      <Media photo={{ kind: "unsplash", id: PHOTOS.mountain }} alt="Горный перевал в тумане" sizes="100vw" />
+      <Media photo={PHOTOS.mountain} alt="Горный перевал в тумане" sizes="100vw" />
       <div className="atmosphere__shade" />
       <p className="atmosphere__jp">速度</p>
       <div className="container atmosphere__content">
@@ -52,7 +52,7 @@ export function TougeSection() {
 export function WanganSection() {
   return (
     <section className="atmosphere atmosphere--wangan" id="wangan">
-      <Media photo={{ kind: "unsplash", id: PHOTOS.tokyoStreet }} alt="Ночной Токио и скоростная трасса" sizes="100vw" />
+      <Media photo={PHOTOS.tokyoStreet} alt="Ночной Токио и скоростная трасса" sizes="100vw" />
       <div className="atmosphere__shade" />
       <div className="container atmosphere__content">
         <p className="micro">TOKYO BAY EXPRESSWAY</p>
@@ -71,7 +71,7 @@ export function DaikokuSection() {
   const { t } = useLocale()
   return (
     <section className="atmosphere atmosphere--daikoku" id="daikoku">
-      <Media photo={{ kind: "unsplash", id: PHOTOS.meet }} alt="Встреча автомобилей, сообщество и культура" sizes="100vw" />
+      <Media photo={PHOTOS.meet} alt="Встреча автомобилей, сообщество и культура" sizes="100vw" />
       <div className="atmosphere__shade" />
       <div className="container atmosphere__content">
         <p className="micro">COMMUNITY / MEETING</p>
