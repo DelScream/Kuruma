@@ -24,12 +24,6 @@ npm run build
 npm run preview
 ```
 
-## GitHub Pages
-
-Деплой идёт автоматически из ветки `main` через GitHub Actions.
-
-Базовый путь проекта: `/Kuruma/`.
-
 ## Фотографии
 
 Все кадры отдаются с GitHub Pages из `public/images/`. Внешний CDN не используется: Unsplash с части сетей не открывается и оставляет пустые блоки.
